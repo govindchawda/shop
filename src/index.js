@@ -4,11 +4,14 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import BannerSlider from './componants/BannerSlider';
+import { BrowserRouter } from 'react-router-dom';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
+    <BrowserRouter  basename="/shop">
     <App />
+    </BrowserRouter>
     {/* <BannerSlider/> */}
   </React.StrictMode>
 );
